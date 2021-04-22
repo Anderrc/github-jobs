@@ -1,0 +1,42 @@
+@import '../../../style/variables.scss';
+
+.o-button{
+    padding: 0px 5px;
+    color: white;
+    background: $gray;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Raleway Thin';
+    height: 22px;
+    cursor: pointer;
+}
+
+.o-button-img{
+    border: none;
+    padding: 5px;
+    background: $gray;
+    border-radius: 30px;
+    outline:none;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    // font-family: 'Raleway Thin';
+    
+    img{
+        width: 20px;
+        height: 20px;
+    }
+
+    &:hover{
+        img{
+            width: 22px;
+            height: 22px;
+            // filter: invert(100%);
+        }
+    }
+
+    &:focus, &:active{
+        border: none;
+    }
+}
